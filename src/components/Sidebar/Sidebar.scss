@@ -1,0 +1,67 @@
+.Sidebar {
+	width: 290px;
+	height: 100%;
+	background-color: #ffffff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.Sidebar__logo {
+	padding-top: 47px;
+	padding-left: 38px;
+	padding-bottom: 47px;
+	border: 1px solid #f4f7fe;
+}
+
+.Sidebar__menu {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 24px 38px 0 38px;
+}
+
+.Sidebar__selected_item {
+	width: 214px;
+	height: 45px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 14px;
+	padding-left: 10px;
+	background: #4318ff;
+	border-radius: 5px;
+}
+
+.Sidebar__selected_item p {
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 28px;
+}
+
+.Sidebar__item {
+	width: 214px;
+	height: 45px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 14px;
+	padding-left: 10px;
+}
+
+.Sidebar__menu img {
+	color: #a3aed0;
+	width: 24px;
+	height: 24px;
+}
+
+.Sidebar__menu p {
+	font-size: 16px;
+	color: #a3aed0;
+	font-weight: 500;
+	line-height: 28px;
+}
