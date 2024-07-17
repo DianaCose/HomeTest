@@ -6,6 +6,8 @@ import { SmallChart } from '../SmallChart/SmallChart';
 import { LargeChart } from '../LargeChart/LargeChart';
 import { MediumChart } from '../MediumChart/MediumChart';
 import { Typography } from '../Typography/Typography';
+import newClient from '../../assets/newClient.svg';
+import earnings from '../../assets/earnings.svg';
 
 export const Home = () => {
 	return (
@@ -17,14 +19,61 @@ export const Home = () => {
 				</div>
 				<Input svg={search} label={'Search'} />
 			</div>
-			<div>
-				<SmallChart>
-					<div className="chart_container">
-						<Typography label="Spent this month" text="$682.5" />
+			<div className="Home_content">
+				<div className="wrapper">
+					<div>
+						<SmallChart>
+							<div className="chart_container">
+								<Typography label="Spent this month" text="$682.5" />
+							</div>
+						</SmallChart>
 					</div>
-				</SmallChart>
-				<LargeChart />
-				<MediumChart />
+
+					<SmallChart>
+						<div className="new_client">
+							<img src={newClient} alt="clients icon" />
+							<div>
+								<Typography label="New clients" text="321" />
+							</div>
+						</div>
+					</SmallChart>
+
+					<SmallChart>
+						<div className="new_client">
+							<img src={earnings} alt="earnings icon" />
+							<div>
+								<Typography label="Earnings" text="$350.40" />
+							</div>
+						</div>
+					</SmallChart>
+					<div className="four">
+						<SmallChart>
+							<div className="chart_container">
+								<Typography label="Activity" text="$540.50" />
+							</div>
+						</SmallChart>
+					</div>
+				</div>
+				<div className="wrapper">
+					<div className="five">
+						<LargeChart />
+					</div>
+					<div className="six">
+						<MediumChart />
+					</div>
+				</div>
+
+				<div className="wrapper">
+					<div className="seven">
+						<MediumChart />
+					</div>
+					<div className="eight">
+						<MediumChart />
+					</div>
+					<div className="nine">
+						<MediumChart />
+					</div>
+				</div>
 			</div>
 		</div>
 	);

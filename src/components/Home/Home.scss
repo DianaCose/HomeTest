@@ -1,7 +1,7 @@
 .Home {
 	padding-left: 290px;
 	width: auto;
-	height: 100vh;
+	height: 100%;
 }
 
 .Home__header {
@@ -28,4 +28,30 @@
 
 .chart_container {
 	padding: 24px;
+}
+
+.Home_content {
+	padding: 24px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 24px;
+}
+
+.new_client {
+	display: flex;
+	flex-direction: row;
+	// justify-content: space-evenly;
+	align-items: center;
+	gap: 24px;
+	padding: 24px;
+}
+
+.new_client img {
+	width: 56px;
+	height: 56px;
 }
