@@ -44,12 +44,12 @@ export const Sidebar = () => {
 			<div className="Sidebar__menu">
 				<div className="Sidebar__selected_item">
 					<img src={dashboard} alt={dashboard} />
-					<p>Dashboard</p>
+					<p className="Sidebar__selected_item_text">Dashboard</p>
 				</div>
 				{MenuItems.map((item, index) => (
 					<div key={index} className="Sidebar__item">
 						<img src={item.icon} alt={item.name} />
-						<p>{item.name}</p>
+						<p className="Sidebar__menu_text">{item.name}</p>
 					</div>
 				))}
 			</div>

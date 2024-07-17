@@ -3,16 +3,20 @@
 	height: 100%;
 	background-color: #ffffff;
 	position: fixed;
-	top: 0;
 	left: 0;
 	z-index: 100;
 }
 
 .Sidebar__logo {
+	width: 290px;
+	height: 115px;
+	border: 1px solid #f4f7fe;
+}
+
+.Sidebar__logo img {
 	padding-top: 47px;
 	padding-left: 38px;
 	padding-bottom: 47px;
-	border: 1px solid #f4f7fe;
 }
 
 .Sidebar__menu {
@@ -35,7 +39,7 @@
 	border-radius: 5px;
 }
 
-.Sidebar__selected_item p {
+.Sidebar__selected_item_text {
 	font-size: 16px;
 	color: #ffffff;
 	font-weight: 700;
@@ -53,15 +57,30 @@
 	padding-left: 10px;
 }
 
+.Sidebar__item:hover {
+	background: #4318ff;
+	border-radius: 5px;
+	color: #ffffff;
+	font-weight: 700;
+	cursor: pointer;
+}
+
 .Sidebar__menu img {
 	color: #a3aed0;
 	width: 24px;
 	height: 24px;
+	&:hover {
+		color: #ffffff;
+	}
 }
 
-.Sidebar__menu p {
+.Sidebar__menu_text {
 	font-size: 16px;
 	color: #a3aed0;
 	font-weight: 500;
 	line-height: 28px;
+	&:hover {
+		color: #ffffff;
+		font-weight: 700;
+	}
 }

@@ -1,0 +1,31 @@
+.Home {
+	padding-left: 290px;
+	width: auto;
+	height: 100vh;
+}
+
+.Home__header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px 38px 0 38px;
+}
+
+.Home__header_small {
+	font-size: 14px;
+	color: #707eae;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.Home__header_title {
+	font-size: 34px;
+	color: #2b3674;
+	font-weight: 700;
+	line-height: 42px;
+}
+
+.chart_container {
+	padding: 24px;
+}
