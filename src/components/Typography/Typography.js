@@ -4,8 +4,8 @@ import './Typography.scss';
 export const Typography = (props) => {
 	return (
 		<>
-			<div className="label">{props.label}</div>
-			<div className="text">{props.text}</div>
+			<div className={props.classLabel}>{props.label}</div>
+			<div className={props.classText}>{props.text}</div>
 		</>
 	);
 };

@@ -45,7 +45,6 @@
 .new_client {
 	display: flex;
 	flex-direction: row;
-	// justify-content: space-evenly;
 	align-items: center;
 	gap: 24px;
 	padding: 24px;
@@ -54,4 +53,100 @@
 .new_client img {
 	width: 56px;
 	height: 56px;
+}
+
+.activity {
+	background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
+	width: 259px;
+	height: 97px;
+	border-radius: 20px;
+}
+
+.label {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 24px;
+	color: #a3aed0;
+}
+
+.small_label {
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 20px;
+	color: #a3aed0;
+}
+
+.text {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32px;
+	color: #1b2559;
+}
+
+.colored_chart_label {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.colored_chart_text {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32px;
+	color: #ffffff;
+}
+
+.user_chart {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+
+.avatar {
+	width: 127.22px;
+	height: 130.34px;
+}
+
+.user_chart_text {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32px;
+	color: #1b2559;
+}
+
+.location {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.user_chart_svg {
+	width: 10.2px;
+	height: 14.57px;
+}
+
+.user_chart_label {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 24px;
+	color: #a3aed0;
+}
+
+.details {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 24px;
+}
+
+.user_details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
