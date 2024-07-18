@@ -252,8 +252,8 @@ export const Home = () => {
 									<img src={rectangle} alt="rectangle" />
 									<div>
 										<Typography
-											label="Public Transport"
-											text="22 September 2020"
+											label="Meet w/ Simmmple"
+											text="01:00 PM - 02:00 PM"
 											classLabel="medium_text"
 											classText="small_label"
 										/>
@@ -265,8 +265,8 @@ export const Home = () => {
 									<img src={rectangle} alt="rectangle" />
 									<div>
 										<Typography
-											label="Grocery Store"
-											text="18 September 2020"
+											label="Fitness Training"
+											text="02:00 PM - 03:00 PM"
 											classLabel="medium_text"
 											classText="small_label"
 										/>
@@ -278,8 +278,8 @@ export const Home = () => {
 									<img src={rectangle} alt="rectangle" />
 									<div>
 										<Typography
-											label="Public Transport"
-											text="22 September 2020"
+											label="Reading time"
+											text="03:00 PM - 04:00 PM"
 											classLabel="medium_text"
 											classText="small_label"
 										/>
