@@ -48,11 +48,11 @@
 	align-items: center;
 	gap: 24px;
 	padding: 24px;
-}
 
-.new_client img {
-	width: 56px;
-	height: 56px;
+	img {
+		width: 56px;
+		height: 56px;
+	}
 }
 
 .activity {
@@ -149,4 +149,145 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.onTrack {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5px;
+
+	img {
+		width: 15px;
+		height: 15px;
+	}
+
+	div {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 28px;
+		color: #05cd99;
+	}
+}
+
+.percentage {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 24px 24px 0 0;
+
+	img {
+		width: 18px;
+		height: 18px;
+	}
+
+	div {
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 20px;
+		color: #05cd99;
+	}
+}
+
+.track_chart {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	gap: 24px;
+}
+
+.transaction_title {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 32px;
+	color: #1b2559;
+	padding-bottom: 12px;
+}
+
+.medium_text {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 28px;
+	color: #1b2559;
+}
+
+.transaction {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 24px;
+	padding-top: 15px;
+	img {
+		width: 48px;
+		height: 48px;
+	}
+}
+
+.back_container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 5px;
+	padding-top: 30px;
+
+	a {
+		text-decoration: none;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 28px;
+		color: #4318ff;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	img {
+		width: 24px;
+		height: 24px;
+		color: #4318ff;
+	}
+}
+.calendar {
+	padding-top: 15px;
+}
+
+.calendar_container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+}
+
+@media (max-width: 768px) {
+	.Home {
+		padding-left: 0;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.new_client {
+		flex-direction: column;
+		align-items: center;
+	}
+	.activity {
+		width: 100%;
+	}
+	.user_chart {
+		width: 100%;
+	}
+	.details {
+		flex-direction: column;
+		align-items: center;
+	}
+	.track_chart {
+		flex-direction: column;
+	}
+	.transaction {
+		flex-direction: column;
+		align-items: center;
+	}
+	.back_container {
+		padding-top: 10px;
+	}
 }
