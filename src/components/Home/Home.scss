@@ -39,7 +39,6 @@
 
 .new_client {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	gap: 24px;
 	padding: 24px;
@@ -55,6 +54,14 @@
 	width: 259px;
 	height: 97px;
 	border-radius: 20px;
+}
+
+.activity_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	padding: 24px;
 }
 
 .label {
@@ -252,4 +259,46 @@
 	flex-direction: row;
 	align-items: center;
 	gap: 20px;
+}
+
+.new_client_chart {
+	width: 58.5px;
+	height: 38.5px;
+	color: linear-gradient(73.48deg, #4f2cff -54.8%, rgba(79, 44, 255, 0) 96.19%);
+}
+
+.activity_chart {
+	width: 100px;
+	height: 45px;
+	color: linear-gradient(73.48deg, #4f2cff -54.8%, rgba(79, 44, 255, 0) 96.19%);
+}
+
+.small_bar_chart {
+	width: 33px;
+	height: 33px;
+	background: #f4f7fe;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.largeChart_header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.largeChart_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.track_chart_graph {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
 }

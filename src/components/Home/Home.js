@@ -17,6 +17,11 @@ import grocery from '../../assets/grocery.svg';
 import subscription from '../../assets/subscription.svg';
 import arrow_back from '../../assets/arrow_back.svg';
 import rectangle from '../../assets/rectangle.svg';
+import bar_chart from '../../assets/bar_chart.svg';
+import { ChartLine } from '../Graphs/ChartLine';
+import { ChartBar } from '../Graphs/ChartBar';
+import { dataLine } from '../../data/lineChartData';
+import { dataBar } from '../../data/barChartData';
 
 export const Home = () => {
 	return (
@@ -32,12 +37,20 @@ export const Home = () => {
 				<div className="wrapper">
 					<div>
 						<SmallChart>
-							<div className="Padding_container">
-								<Typography
-									label="Spent this month"
-									text="$682.5"
-									classLabel="label"
-									classText="text"
+							<div className="activity_container">
+								<div>
+									<Typography
+										label="Spent this month"
+										text="$682.5"
+										classLabel="label"
+										classText="text"
+									/>
+								</div>
+								<ChartBar
+									width={90}
+									height={60}
+									data={dataLine}
+									hasAxis={false}
 								/>
 							</div>
 						</SmallChart>
@@ -53,6 +66,7 @@ export const Home = () => {
 									classText="text"
 								/>
 							</div>
+							<ChartLine data={dataLine} width={59} height={60} />
 						</div>
 					</SmallChart>
 
@@ -70,12 +84,20 @@ export const Home = () => {
 						</div>
 					</SmallChart>
 					<div className="activity">
-						<div className="Padding_container">
-							<Typography
-								label="Activity"
-								text="$540.50"
-								classLabel="colored_chart_label"
-								classText="colored_chart_text"
+						<div className="activity_container">
+							<div>
+								<Typography
+									label="Activity"
+									text="$540.50"
+									classLabel="colored_chart_label"
+									classText="colored_chart_text"
+								/>
+							</div>
+							<ChartLine
+								data={dataLine}
+								width={100}
+								height={40}
+								className={'activity_chart'}
 							/>
 						</div>
 					</div>
@@ -83,11 +105,26 @@ export const Home = () => {
 				<div className="wrapper">
 					<LargeChart>
 						<div className="Padding_container">
-							<Typography
-								label="Total Spent"
-								text="$682.5"
-								classLabel="label"
-								classText="text"
+							<div className="largeChart_header">
+								<div>
+									<Typography
+										label="Total Spent"
+										text="$682.5"
+										classLabel="label"
+										classText="text"
+									/>
+								</div>
+								<div className="small_bar_chart">
+									<img src={bar_chart} alt="bar_chart" />
+								</div>
+							</div>
+						</div>
+						<div className="largeChart_container">
+							<ChartBar
+								width={680}
+								height={240}
+								data={dataBar}
+								hasAxis={true}
 							/>
 						</div>
 					</LargeChart>
@@ -153,6 +190,14 @@ export const Home = () => {
 								<img src={arrow_up} alt="arrow_up" />
 								<div>+2.45%</div>
 							</div>
+						</div>
+						<div className="track_chart_graph">
+							<ChartBar
+								width={289}
+								height={180}
+								data={dataLine}
+								hasAxis={false}
+							/>
 						</div>
 					</MediumChart>
 					<MediumChart>
