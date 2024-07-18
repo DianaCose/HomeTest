@@ -23,16 +23,16 @@ export const Home = () => {
 		<div className="Home">
 			<div className="Home__header">
 				<div>
-					<div className="Home__header_small">Hi Andrei,</div>
+					<div className="Home__header_subtitle">Hi Andrei,</div>
 					<div className="Home__header_title">Welcome to Venus!</div>
 				</div>
 				<Input svg={search} label={'Search'} />
 			</div>
-			<div className="Home_content">
+			<div className="Padding_container">
 				<div className="wrapper">
 					<div>
 						<SmallChart>
-							<div className="chart_container">
+							<div className="Padding_container">
 								<Typography
 									label="Spent this month"
 									text="$682.5"
@@ -70,7 +70,7 @@ export const Home = () => {
 						</div>
 					</SmallChart>
 					<div className="activity">
-						<div className="chart_container">
+						<div className="Padding_container">
 							<Typography
 								label="Activity"
 								text="$540.50"
@@ -82,7 +82,7 @@ export const Home = () => {
 				</div>
 				<div className="wrapper">
 					<LargeChart>
-						<div className="chart_container">
+						<div className="Padding_container">
 							<Typography
 								label="Total Spent"
 								text="$682.5"
@@ -137,7 +137,7 @@ export const Home = () => {
 				<div className="wrapper">
 					<MediumChart>
 						<div className="track_chart">
-							<div className="chart_container">
+							<div className="Padding_container">
 								<Typography
 									label="Spent this month"
 									text="$682.5"
@@ -156,7 +156,7 @@ export const Home = () => {
 						</div>
 					</MediumChart>
 					<MediumChart>
-						<div className="chart_container">
+						<div className="Padding_container">
 							<div className="transaction_title">Your transactions</div>
 							<div className="transaction">
 								<img src={transport} alt="transport" />
@@ -200,7 +200,7 @@ export const Home = () => {
 						</div>
 					</MediumChart>
 					<MediumChart>
-						<div className="chart_container">
+						<div className="Padding_container">
 							<div className="Home__header_title">27 May</div>
 							<div className="calendar">
 								<div className="calendar_container">

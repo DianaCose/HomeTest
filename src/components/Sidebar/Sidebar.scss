@@ -1,4 +1,6 @@
 .Sidebar {
+	display: flex;
+	flex-direction: column;
 	width: 290px;
 	height: 100%;
 	background-color: #ffffff;
@@ -11,12 +13,12 @@
 	width: 290px;
 	height: 115px;
 	border: 1px solid #f4f7fe;
-}
 
-.Sidebar__logo img {
-	padding-top: 47px;
-	padding-left: 38px;
-	padding-bottom: 47px;
+	img {
+		padding-top: 47px;
+		padding-left: 38px;
+		padding-bottom: 47px;
+	}
 }
 
 .Sidebar__menu {
@@ -24,6 +26,26 @@
 	flex-direction: column;
 	gap: 15px;
 	padding: 24px 38px 0 38px;
+
+	img {
+		color: #a3aed0;
+		width: 24px;
+		height: 24px;
+		&:hover {
+			color: #ffffff;
+		}
+	}
+
+	p {
+		font-size: 16px;
+		color: #a3aed0;
+		font-weight: 500;
+		line-height: 28px;
+		&:hover {
+			color: #ffffff;
+			font-weight: 700;
+		}
+	}
 }
 
 .Sidebar__selected_item {
@@ -37,13 +59,13 @@
 	padding-left: 10px;
 	background: #4318ff;
 	border-radius: 5px;
-}
 
-.Sidebar__selected_item_text {
-	font-size: 16px;
-	color: #ffffff;
-	font-weight: 700;
-	line-height: 28px;
+	p {
+		font-size: 16px;
+		color: #ffffff;
+		font-weight: 700;
+		line-height: 28px;
+	}
 }
 
 .Sidebar__item {
@@ -65,22 +87,8 @@
 	cursor: pointer;
 }
 
-.Sidebar__menu img {
-	color: #a3aed0;
-	width: 24px;
-	height: 24px;
-	&:hover {
-		color: #ffffff;
-	}
-}
-
-.Sidebar__menu_text {
-	font-size: 16px;
-	color: #a3aed0;
-	font-weight: 500;
-	line-height: 28px;
-	&:hover {
-		color: #ffffff;
-		font-weight: 700;
-	}
+.log_out {
+	@extend .Sidebar__menu;
+	margin-top: auto;
+	padding-bottom: 24px;
 }

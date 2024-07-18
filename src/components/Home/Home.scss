@@ -12,7 +12,7 @@
 	padding: 24px 38px 0 38px;
 }
 
-.Home__header_small {
+.Home__header_subtitle {
 	font-size: 14px;
 	color: #707eae;
 	font-weight: 700;
@@ -25,12 +25,7 @@
 	font-weight: 700;
 	line-height: 42px;
 }
-
-.chart_container {
-	padding: 24px;
-}
-
-.Home_content {
+.Padding_container {
 	padding: 24px;
 }
 
@@ -257,37 +252,4 @@
 	flex-direction: row;
 	align-items: center;
 	gap: 20px;
-}
-
-@media (max-width: 768px) {
-	.Home {
-		padding-left: 0;
-	}
-	.wrapper {
-		flex-direction: column;
-	}
-	.new_client {
-		flex-direction: column;
-		align-items: center;
-	}
-	.activity {
-		width: 100%;
-	}
-	.user_chart {
-		width: 100%;
-	}
-	.details {
-		flex-direction: column;
-		align-items: center;
-	}
-	.track_chart {
-		flex-direction: column;
-	}
-	.transaction {
-		flex-direction: column;
-		align-items: center;
-	}
-	.back_container {
-		padding-top: 10px;
-	}
 }
