@@ -1,6 +1,6 @@
 import React from 'react';
-import './MediumChart.scss';
+import './MediumCard.scss';
 
-export const MediumChart = (props) => {
+export const MediumCard = (props) => {
 	return <div className="MediumChart">{props.children}</div>;
 };

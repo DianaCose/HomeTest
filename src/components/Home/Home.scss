@@ -1,36 +1,54 @@
 .Home {
-	padding-left: 290px;
-	width: calc(100% - 290px);
-	height: 100%;
+	padding: 0 10px 10px 10px;
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 97px 345px 345px;
+	grid-template-areas:
+		'card1 card1 card1 card2 card2 card2 card3 card3 card3 card4 card4 card4'
+		'card5 card5 card5 card5 card5 card5 card5 card5 card6 card6 card6 card6'
+		'card7 card7 card7 card7 card8 card8 card8 card8 card9 card9 card9 card9';
+	gap: 20px;
 }
-
-.Home__header {
+.card1 {
+	grid-area: card1;
+}
+.card2 {
+	grid-area: card2;
+}
+.card3 {
+	grid-area: card3;
+}
+.card4 {
+	grid-area: card4;
+}
+.card5 {
+	grid-area: card5;
+}
+.card6 {
+	grid-area: card6;
+}
+.card7 {
+	grid-area: card7;
+}
+.card8 {
+	grid-area: card8;
+}
+.card9 {
+	grid-area: card9;
+}
+.spent_container {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 	align-items: center;
-	padding: 24px 38px 0 38px;
-}
-.Padding_container {
-	padding: 24px;
-	display: flex;
-	flex-direction: column;
-	box-sizing: border-box;
-}
-.wrapper {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	// align-items: center;
-	margin-top: 24px;
-	gap: 15px;
+	gap: 10px;
+	padding: 18px 0 0 24px;
 }
 .new_client {
 	display: flex;
 	align-items: center;
 	gap: 20px;
-	padding: 20px;
+	padding-top: 20px;
+	padding-left: 17px;
 	img {
 		width: 56px;
 		height: 56px;
@@ -40,34 +58,49 @@
 	display: flex;
 	align-items: center;
 	gap: 20px;
-	padding: 20px;
+	padding-top: 20px;
+	padding-left: 17px;
 	img {
 		width: 56px;
 		height: 56px;
 	}
 }
-
 .activity {
 	background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
-	flex: 1 1 259px;
-	max-width: calc(25% - 5px);
+	min-width: 259px;
 	min-height: 97px;
 	border-radius: 20px;
 }
 .activity_container {
 	display: flex;
-	justify-content: space-between;
-	gap: 20px;
-	padding: 15px 10px 10px 15px;
-	box-sizing: border-box;
+	align-items: center;
+	gap: 10px;
+	padding-top: 22px;
+	padding-left: 22px;
 }
-.spent_container {
+.largeChart_header {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
-	justify-content: flex-start;
-	gap: 20px;
-	padding: 15px 24px 0 24px;
+	padding-left: 31.3px;
+	padding-top: 28px;
+	padding-right: 31.3px;
+}
+.small_bar_chart {
+	width: 33px;
+	height: 33px;
+	background: #f4f7fe;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.largeChart_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 20px;
 }
 .user_chart {
 	padding: 24px;
@@ -109,12 +142,10 @@
 	justify-content: flex-start;
 	align-items: center;
 	gap: 5px;
-
 	img {
 		width: 15px;
 		height: 15px;
 	}
-
 	div {
 		font-size: 16px;
 		font-weight: 700;
@@ -124,9 +155,9 @@
 }
 .percentage {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	align-items: flex-start;
-	padding: 24px 24px 0 0;
+	padding-right: 28px;
 	img {
 		width: 18px;
 		height: 18px;
@@ -138,18 +169,24 @@
 		color: #05cd99;
 	}
 }
+.track_chart_graph {
+	padding: 38px 28px 28px 28px;
+}
 .track_chart {
 	display: flex;
 	justify-content: space-between;
-	align-items: start;
+	align-items: flex-start;
 	gap: 24px;
+	padding-left: 28px;
+	padding-top: 23px;
 }
 .transaction {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	gap: 24px;
-	padding-top: 15px;
+	gap: 16px;
+	padding-top: 19px;
+	padding-left: 28px;
 	img {
 		width: 48px;
 		height: 48px;
@@ -162,6 +199,7 @@
 	justify-content: flex-end;
 	gap: 5px;
 	padding-top: 30px;
+	padding-right: 28px;
 	a {
 		text-decoration: none;
 		font-size: 16px;
@@ -181,52 +219,20 @@
 .calendar {
 	padding-top: 15px;
 }
-
 .calendar_container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 20px;
+	gap: 10px;
+	padding-left: 28px;
 }
-
 .new_client_chart {
 	width: 58.5px;
 	height: 38.5px;
 	color: linear-gradient(73.48deg, #4f2cff -54.8%, rgba(79, 44, 255, 0) 96.19%);
 }
-
 .activity_chart {
 	width: 100px;
 	height: 45px;
 	color: linear-gradient(73.48deg, #4f2cff -54.8%, rgba(79, 44, 255, 0) 96.19%);
-}
-
-.small_bar_chart {
-	width: 33px;
-	height: 33px;
-	background: #f4f7fe;
-	border-radius: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.largeChart_header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.largeChart_container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.track_chart_graph {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: flex-end;
 }

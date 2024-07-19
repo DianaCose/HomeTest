@@ -1,4 +1,23 @@
 .App {
 	background: #f4f7fe;
 	min-height: 100vh;
+	display: grid;
+	min-width: 100%;
+	grid-template-areas:
+		'nav head'
+		'nav main';
+	grid-template-rows: 146px 1fr;
+	grid-template-columns: 290px 1fr;
+}
+
+.App > header {
+	grid-area: head;
+}
+
+.App > nav {
+	grid-area: nav;
+}
+
+.App > main {
+	grid-area: main;
 }

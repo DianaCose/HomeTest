@@ -1,6 +1,6 @@
 import React from 'react';
-import './LargeChart.scss';
+import './LargeCard.scss';
 
-export const LargeChart = (props) => {
+export const LargeCard = (props) => {
 	return <div className="LargeChart">{props.children}</div>;
 };

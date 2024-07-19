@@ -1,6 +1,6 @@
 import React from 'react';
-import './SmallChart.scss';
+import './SmallCard.scss';
 
-export const SmallChart = (props) => {
+export const SmallCard = (props) => {
 	return <div className="SmallChart">{props.children}</div>;
 };
