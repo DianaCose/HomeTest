@@ -10,7 +10,8 @@
 
 @media (max-width: 900px) {
 	.card {
-		max-width: calc(50% - 16px);
+		width: 400px;
+		max-width: calc(50% - 5px);
 		margin-bottom: 24px;
 	}
 }
