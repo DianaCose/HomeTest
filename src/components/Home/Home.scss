@@ -9,6 +9,7 @@
 		'card5 card5 card5 card5 card5 card5 card5 card5 card6 card6 card6 card6'
 		'card7 card7 card7 card7 card8 card8 card8 card8 card9 card9 card9 card9';
 	gap: 20px;
+	box-sizing: border-box;
 }
 .card1 {
 	grid-area: card1;
@@ -235,4 +236,35 @@
 	width: 100px;
 	height: 45px;
 	color: linear-gradient(73.48deg, #4f2cff -54.8%, rgba(79, 44, 255, 0) 96.19%);
+}
+
+@media (max-width: 1250px) {
+	.Home {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 97px 97px 345px 345px 345px;
+		grid-template-areas:
+			'card1 card2'
+			'card3 card4'
+			'card5 card5'
+			'card6 card7'
+			'card8 card9';
+		gap: 20px;
+	}
+}
+@media (max-width: 768px) {
+	.Home {
+		grid-template-columns: 1fr;
+		grid-template-rows: 97px 97px 97px 97px 345px 345px 345px 345px 345px;
+		grid-template-areas:
+			'card1'
+			'card2'
+			'card3'
+			'card4'
+			'card5'
+			'card6'
+			'card7'
+			'card8'
+			'card9';
+		gap: 20px;
+	}
 }
