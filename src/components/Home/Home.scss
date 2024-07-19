@@ -32,16 +32,18 @@
 .wrapper {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 24px;
+	gap: 5px;
 }
 
 .new_client {
 	display: flex;
 	align-items: center;
-	gap: 24px;
-	padding: 24px;
+	gap: 20px;
+	padding: 20px;
 
 	img {
 		width: 56px;
@@ -51,8 +53,8 @@
 
 .activity {
 	background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
-	width: 259px;
-	height: 97px;
+	min-width: 259px;
+	min-height: 97px;
 	border-radius: 20px;
 }
 
@@ -61,7 +63,7 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
-	padding: 24px;
+	padding: 15px 15px 10px 15px;
 }
 
 .label {

@@ -23,6 +23,7 @@ export const ChartBar = (props) => {
 				fill="#4318FF"
 				radius={15}
 				background={{ fill: '#eee', radius: 15 }}
+				barSize={props.barSize}
 			/>
 		</BarChart>
 	);

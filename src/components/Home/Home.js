@@ -35,26 +35,24 @@ export const Home = () => {
 			</div>
 			<div className="Padding_container">
 				<div className="wrapper">
-					<div>
-						<SmallChart>
-							<div className="activity_container">
-								<div>
-									<Typography
-										label="Spent this month"
-										text="$682.5"
-										classLabel="label"
-										classText="text"
-									/>
-								</div>
-								<ChartBar
-									width={90}
-									height={60}
-									data={dataLine}
-									hasAxis={false}
+					<SmallChart>
+						<div className="activity_container">
+							<div>
+								<Typography
+									label="Spent this month"
+									text="$682.5"
+									classLabel="label"
+									classText="text"
 								/>
 							</div>
-						</SmallChart>
-					</div>
+							<ChartBar
+								width={90}
+								height={60}
+								data={dataLine}
+								hasAxis={false}
+							/>
+						</div>
+					</SmallChart>
 					<SmallChart>
 						<div className="new_client">
 							<img src={newClient} alt="clients icon" />
@@ -66,10 +64,9 @@ export const Home = () => {
 									classText="text"
 								/>
 							</div>
-							<ChartLine data={dataLine} width={59} height={60} />
+							<ChartLine data={dataLine} width={39} height={57} />
 						</div>
 					</SmallChart>
-
 					<SmallChart>
 						<div className="new_client">
 							<img src={earnings} alt="earnings icon" />
@@ -125,6 +122,7 @@ export const Home = () => {
 								height={240}
 								data={dataBar}
 								hasAxis={true}
+								barSize={40}
 							/>
 						</div>
 					</LargeChart>
@@ -193,10 +191,11 @@ export const Home = () => {
 						</div>
 						<div className="track_chart_graph">
 							<ChartBar
-								width={289}
+								width={350}
 								height={180}
 								data={dataLine}
 								hasAxis={false}
+								barSize={30}
 							/>
 						</div>
 					</MediumChart>
