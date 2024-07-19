@@ -56,7 +56,9 @@
 
 .activity {
 	background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
+	flex: 1 1 259px;
 	min-width: 259px;
+	max-width: calc(25% - 5px);
 	min-height: 97px;
 	border-radius: 20px;
 }
@@ -64,12 +66,11 @@
 .activity_container {
 	display: flex;
 	justify-content: space-between;
-	flex: 1 1 259px;
-	min-width: 259px;
-	max-width: calc(25% - 5px);
+
 	align-items: center;
 	gap: 20px;
 	padding: 15px 15px 10px 15px;
+	box-sizing: border-box;
 }
 
 .spent_container {
