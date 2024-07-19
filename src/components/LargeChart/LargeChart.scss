@@ -1,6 +1,23 @@
 .LargeChart {
+	flex: 1 1 720px;
 	min-width: 720px;
+	max-width: calc(50% - 5px);
 	min-height: 345px;
 	border-radius: 20px;
 	background: #ffffff;
+	box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+	.card {
+		max-width: calc(50% - 16px);
+		margin-bottom: 24px;
+	}
+}
+
+@media (max-width: 400px) {
+	.card {
+		max-width: 100%;
+		margin-bottom: 24px;
+	}
 }

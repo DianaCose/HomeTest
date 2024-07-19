@@ -1,6 +1,6 @@
 .Home {
 	padding-left: 290px;
-	width: auto;
+	width: calc(100% - 290px);
 	height: 100%;
 }
 
@@ -27,6 +27,9 @@
 }
 .Padding_container {
 	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
 }
 
 .wrapper {
@@ -36,7 +39,7 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 24px;
-	gap: 5px;
+	gap: 24px;
 }
 
 .new_client {
@@ -61,6 +64,9 @@
 .activity_container {
 	display: flex;
 	justify-content: space-between;
+	// 	flex: 1 1 259px;
+	// min-width: 259px;
+	// max-width: calc(25% - 5px);
 	align-items: center;
 	gap: 20px;
 	padding: 15px 15px 10px 15px;
