@@ -36,7 +36,7 @@ export const Home = () => {
 			<div className="Padding_container">
 				<div className="wrapper">
 					<SmallChart>
-						<div className="activity_container">
+						<div className="spent_container">
 							<div>
 								<Typography
 									label="Spent this month"
