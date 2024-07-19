@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.scss';
+import './../Typography/Typography.scss';
 import { Input } from '../Input/Input';
 import search from '../../assets/search.svg';
 import { SmallChart } from '../SmallChart/SmallChart';
@@ -68,7 +69,7 @@ export const Home = () => {
 						</div>
 					</SmallChart>
 					<SmallChart>
-						<div className="new_client">
+						<div className="earnings">
 							<img src={earnings} alt="earnings icon" />
 							<div>
 								<Typography

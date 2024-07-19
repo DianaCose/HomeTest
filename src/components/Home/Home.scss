@@ -11,43 +11,36 @@
 	align-items: center;
 	padding: 24px 38px 0 38px;
 }
-
-.Home__header_subtitle {
-	font-size: 14px;
-	color: #707eae;
-	font-weight: 700;
-	line-height: 24px;
-}
-
-.Home__header_title {
-	font-size: 34px;
-	color: #2b3674;
-	font-weight: 700;
-	line-height: 42px;
-}
 .Padding_container {
 	padding: 24px;
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
 }
-
 .wrapper {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
+	// align-items: center;
 	margin-top: 24px;
-	gap: 10px;
+	gap: 15px;
 }
-
 .new_client {
 	display: flex;
 	align-items: center;
 	gap: 20px;
 	padding: 20px;
-
+	img {
+		width: 56px;
+		height: 56px;
+	}
+}
+.earnings {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 20px;
 	img {
 		width: 56px;
 		height: 56px;
@@ -57,66 +50,25 @@
 .activity {
 	background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
 	flex: 1 1 259px;
-	min-width: 259px;
 	max-width: calc(25% - 5px);
 	min-height: 97px;
 	border-radius: 20px;
 }
-
 .activity_container {
 	display: flex;
 	justify-content: space-between;
-
-	align-items: center;
 	gap: 20px;
-	padding: 15px 15px 10px 15px;
+	padding: 15px 10px 10px 15px;
 	box-sizing: border-box;
 }
-
 .spent_container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	gap: 20px;
-	padding: 15px 15px 10px 15px;
+	padding: 15px 24px 0 24px;
 }
-
-.label {
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 24px;
-	color: #a3aed0;
-}
-
-.small_label {
-	font-size: 12px;
-	font-weight: 500;
-	line-height: 20px;
-	color: #a3aed0;
-}
-
-.text {
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 32px;
-	color: #1b2559;
-}
-
-.colored_chart_label {
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 24px;
-	color: #ffffff;
-}
-
-.colored_chart_text {
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 32px;
-	color: #ffffff;
-}
-
 .user_chart {
 	padding: 24px;
 	display: flex;
@@ -125,19 +77,10 @@
 	align-items: center;
 	gap: 24px;
 }
-
 .avatar {
 	width: 127.22px;
 	height: 130.34px;
 }
-
-.user_chart_text {
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 32px;
-	color: #1b2559;
-}
-
 .location {
 	display: flex;
 	flex-direction: row;
@@ -149,28 +92,18 @@
 	width: 10.2px;
 	height: 14.57px;
 }
-
-.user_chart_label {
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 24px;
-	color: #a3aed0;
-}
-
 .details {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	gap: 24px;
 }
-
 .user_details {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-
 .onTrack {
 	display: flex;
 	justify-content: flex-start;
@@ -189,18 +122,15 @@
 		color: #05cd99;
 	}
 }
-
 .percentage {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-start;
 	padding: 24px 24px 0 0;
-
 	img {
 		width: 18px;
 		height: 18px;
 	}
-
 	div {
 		font-size: 12px;
 		font-weight: 700;
@@ -208,29 +138,12 @@
 		color: #05cd99;
 	}
 }
-
 .track_chart {
 	display: flex;
 	justify-content: space-between;
 	align-items: start;
 	gap: 24px;
 }
-
-.transaction_title {
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 32px;
-	color: #1b2559;
-	padding-bottom: 12px;
-}
-
-.medium_text {
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 28px;
-	color: #1b2559;
-}
-
 .transaction {
 	display: flex;
 	justify-content: flex-start;
@@ -242,7 +155,6 @@
 		height: 48px;
 	}
 }
-
 .back_container {
 	display: flex;
 	flex-direction: row;
@@ -250,7 +162,6 @@
 	justify-content: flex-end;
 	gap: 5px;
 	padding-top: 30px;
-
 	a {
 		text-decoration: none;
 		font-size: 16px;
@@ -261,7 +172,6 @@
 			cursor: pointer;
 		}
 	}
-
 	img {
 		width: 24px;
 		height: 24px;
