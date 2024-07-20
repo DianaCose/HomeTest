@@ -3,10 +3,8 @@
 	width: calc(100% - 290px);
 	height: 100%;
 }
-
 .Home__header {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	padding: 24px 38px 0 38px;
@@ -19,10 +17,8 @@
 }
 .wrapper {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	// align-items: center;
 	margin-top: 24px;
 	gap: 15px;
 }
@@ -46,7 +42,6 @@
 		height: 56px;
 	}
 }
-
 .activity {
 	background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
 	flex: 1 1 259px;
@@ -109,12 +104,10 @@
 	justify-content: flex-start;
 	align-items: center;
 	gap: 5px;
-
 	img {
 		width: 15px;
 		height: 15px;
 	}
-
 	div {
 		font-size: 16px;
 		font-weight: 700;
@@ -181,26 +174,22 @@
 .calendar {
 	padding-top: 15px;
 }
-
 .calendar_container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	gap: 20px;
 }
-
 .new_client_chart {
 	width: 58.5px;
 	height: 38.5px;
 	color: linear-gradient(73.48deg, #4f2cff -54.8%, rgba(79, 44, 255, 0) 96.19%);
 }
-
 .activity_chart {
 	width: 100px;
 	height: 45px;
 	color: linear-gradient(73.48deg, #4f2cff -54.8%, rgba(79, 44, 255, 0) 96.19%);
 }
-
 .small_bar_chart {
 	width: 33px;
 	height: 33px;
@@ -210,23 +199,17 @@
 	justify-content: center;
 	align-items: center;
 }
-
 .largeChart_header {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 }
-
 .largeChart_container {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 }
-
 .track_chart_graph {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: flex-end;
 }

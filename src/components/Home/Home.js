@@ -3,9 +3,9 @@ import './Home.scss';
 import './../Typography/Typography.scss';
 import { Input } from '../Input/Input';
 import search from '../../assets/search.svg';
-import { SmallChart } from '../SmallChart/SmallChart';
-import { LargeChart } from '../LargeChart/LargeChart';
-import { MediumChart } from '../MediumChart/MediumChart';
+import { SmallCard } from '../SmallCard/SmallCard';
+import { LargeCard } from '../LargeCard/LargeCard';
+import { MediumCard } from '../MediumCard/MediumCard';
 import { Typography } from '../Typography/Typography';
 import newClient from '../../assets/newClient.svg';
 import earnings from '../../assets/earnings.svg';
@@ -36,7 +36,7 @@ export const Home = () => {
 			</div>
 			<div className="Padding_container">
 				<div className="wrapper">
-					<SmallChart>
+					<SmallCard>
 						<div className="spent_container">
 							<div>
 								<Typography
@@ -53,8 +53,8 @@ export const Home = () => {
 								hasAxis={false}
 							/>
 						</div>
-					</SmallChart>
-					<SmallChart>
+					</SmallCard>
+					<SmallCard>
 						<div className="new_client">
 							<img src={newClient} alt="clients icon" />
 							<div>
@@ -67,8 +67,8 @@ export const Home = () => {
 							</div>
 							<ChartLine data={dataLine} width={39} height={57} />
 						</div>
-					</SmallChart>
-					<SmallChart>
+					</SmallCard>
+					<SmallCard>
 						<div className="earnings">
 							<img src={earnings} alt="earnings icon" />
 							<div>
@@ -80,7 +80,7 @@ export const Home = () => {
 								/>
 							</div>
 						</div>
-					</SmallChart>
+					</SmallCard>
 					<div className="activity">
 						<div className="activity_container">
 							<div>
@@ -101,7 +101,7 @@ export const Home = () => {
 					</div>
 				</div>
 				<div className="wrapper">
-					<LargeChart>
+					<LargeCard>
 						<div className="Padding_container">
 							<div className="largeChart_header">
 								<div>
@@ -126,8 +126,8 @@ export const Home = () => {
 								barSize={40}
 							/>
 						</div>
-					</LargeChart>
-					<MediumChart>
+					</LargeCard>
+					<MediumCard>
 						<div className="user_chart">
 							<img src={avatar} alt="avatar" />
 							<div>
@@ -168,10 +168,10 @@ export const Home = () => {
 								</div>
 							</div>
 						</div>
-					</MediumChart>
+					</MediumCard>
 				</div>
 				<div className="wrapper">
-					<MediumChart>
+					<MediumCard>
 						<div className="track_chart">
 							<div className="Padding_container">
 								<Typography
@@ -199,8 +199,8 @@ export const Home = () => {
 								barSize={30}
 							/>
 						</div>
-					</MediumChart>
-					<MediumChart>
+					</MediumCard>
+					<MediumCard>
 						<div className="Padding_container">
 							<div className="transaction_title">Your transactions</div>
 							<div className="transaction">
@@ -243,8 +243,8 @@ export const Home = () => {
 								<img src={arrow_back} alt="arrow-back" />
 							</div>
 						</div>
-					</MediumChart>
-					<MediumChart>
+					</MediumCard>
+					<MediumCard>
 						<div className="Padding_container">
 							<div className="Home__header_title">27 May</div>
 							<div className="calendar">
@@ -293,7 +293,7 @@ export const Home = () => {
 								<img src={arrow_back} alt="arrow-back" />
 							</div>
 						</div>
-					</MediumChart>
+					</MediumCard>
 				</div>
 			</div>
 		</div>
