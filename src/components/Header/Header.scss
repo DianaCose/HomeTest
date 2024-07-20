@@ -1,0 +1,21 @@
+.Home__header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 60px 38px 0 38px;
+}
+
+.Home__header_subtitle {
+	font-size: 14px;
+	color: #707eae;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.Home__header_title {
+	font-size: 34px;
+	color: #2b3674;
+	font-weight: 700;
+	line-height: 42px;
+}

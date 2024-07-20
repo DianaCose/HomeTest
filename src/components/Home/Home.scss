@@ -3,12 +3,6 @@
 	width: calc(100% - 290px);
 	height: 100%;
 }
-.Home__header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 24px 38px 0 38px;
-}
 .Padding_container {
 	padding: 24px;
 	display: flex;
@@ -26,7 +20,8 @@
 	display: flex;
 	align-items: center;
 	gap: 20px;
-	padding: 20px;
+	padding-left: 17px;
+	padding-top: 20px;
 	img {
 		width: 56px;
 		height: 56px;
@@ -36,7 +31,8 @@
 	display: flex;
 	align-items: center;
 	gap: 20px;
-	padding: 20px;
+	padding-top: 20px;
+	padding-left: 17px;
 	img {
 		width: 56px;
 		height: 56px;
@@ -51,26 +47,26 @@
 }
 .activity_container {
 	display: flex;
-	justify-content: space-between;
-	gap: 20px;
-	padding: 15px 10px 10px 15px;
+	align-items: center;
+	gap: 10px;
+	padding-top: 22px;
+	padding-left: 22px;
 	box-sizing: border-box;
 }
 .spent_container {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
-	justify-content: flex-start;
 	gap: 20px;
-	padding: 15px 24px 0 24px;
+	padding-left: 24.63px;
+	padding-top: 18.47px;
 }
 .user_chart {
-	padding: 24px;
+	padding-top: 29px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 24px;
+	gap: 20px;
 }
 .avatar {
 	width: 127.22px;
@@ -131,6 +127,10 @@
 		color: #05cd99;
 	}
 }
+.on_track_paddings {
+	padding-left: 28px;
+	padding-top: 23px;
+}
 .track_chart {
 	display: flex;
 	justify-content: space-between;
@@ -141,8 +141,9 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	gap: 24px;
-	padding-top: 15px;
+	gap: 16px;
+	padding-top: 19px;
+	padding-left: 28px;
 	img {
 		width: 48px;
 		height: 48px;
@@ -155,6 +156,7 @@
 	justify-content: flex-end;
 	gap: 5px;
 	padding-top: 30px;
+	padding-right: 28px;
 	a {
 		text-decoration: none;
 		font-size: 16px;
@@ -179,6 +181,7 @@
 	flex-direction: row;
 	align-items: center;
 	gap: 20px;
+	padding-left: 28px;
 }
 .new_client_chart {
 	width: 58.5px;
@@ -203,13 +206,15 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-left: 31.3px;
+	padding-top: 28px;
+	padding-right: 31.3px;
 }
 .largeChart_container {
 	display: flex;
 	justify-content: center;
+	padding-top: 20px;
 }
 .track_chart_graph {
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
+	padding: 38px 28px 28px 28px;
 }

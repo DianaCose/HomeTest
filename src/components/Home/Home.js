@@ -23,17 +23,12 @@ import { ChartLine } from '../Graphs/ChartLine';
 import { ChartBar } from '../Graphs/ChartBar';
 import { dataLine } from '../../data/lineChartData';
 import { dataBar } from '../../data/barChartData';
+import { Header } from '../Header/Header';
 
 export const Home = () => {
 	return (
 		<div className="Home">
-			<div className="Home__header">
-				<div>
-					<div className="Home__header_subtitle">Hi Andrei,</div>
-					<div className="Home__header_title">Welcome to Venus!</div>
-				</div>
-				<Input svg={search} label={'Search'} />
-			</div>
+			<Header name={'Victor'} />
 			<div className="Padding_container">
 				<div className="wrapper">
 					<SmallCard>
@@ -102,7 +97,7 @@ export const Home = () => {
 				</div>
 				<div className="wrapper">
 					<LargeCard>
-						<div className="Padding_container">
+						<div>
 							<div className="largeChart_header">
 								<div>
 									<Typography
@@ -173,7 +168,7 @@ export const Home = () => {
 				<div className="wrapper">
 					<MediumCard>
 						<div className="track_chart">
-							<div className="Padding_container">
+							<div className="on_track_paddings">
 								<Typography
 									label="Spent this month"
 									text="$682.5"
@@ -201,47 +196,45 @@ export const Home = () => {
 						</div>
 					</MediumCard>
 					<MediumCard>
-						<div className="Padding_container">
-							<div className="transaction_title">Your transactions</div>
-							<div className="transaction">
-								<img src={transport} alt="transport" />
-								<div>
-									<Typography
-										label="Public Transport"
-										text="22 September 2020"
-										classLabel="medium_text"
-										classText="small_label"
-									/>
-								</div>
+						<div className="transaction_title">Your transactions</div>
+						<div className="transaction">
+							<img src={transport} alt="transport" />
+							<div>
+								<Typography
+									label="Public Transport"
+									text="22 September 2020"
+									classLabel="medium_text"
+									classText="small_label"
+								/>
 							</div>
-							<div className="transaction">
-								<img src={grocery} alt="grocery" />
-								<div>
-									<Typography
-										label="Grocery Store"
-										text="18 September 2020"
-										classLabel="medium_text"
-										classText="small_label"
-									/>
-								</div>
+						</div>
+						<div className="transaction">
+							<img src={grocery} alt="grocery" />
+							<div>
+								<Typography
+									label="Grocery Store"
+									text="18 September 2020"
+									classLabel="medium_text"
+									classText="small_label"
+								/>
 							</div>
-							<div className="transaction">
-								<img src={subscription} alt="subscription" />
-								<div>
-									<Typography
-										label="Public Transport"
-										text="22 September 2020"
-										classLabel="medium_text"
-										classText="small_label"
-									/>
-								</div>
+						</div>
+						<div className="transaction">
+							<img src={subscription} alt="subscription" />
+							<div>
+								<Typography
+									label="Public Transport"
+									text="22 September 2020"
+									classLabel="medium_text"
+									classText="small_label"
+								/>
 							</div>
-							<div className="back_container ">
-								<a href="#" className="view_all">
-									View all
-								</a>
-								<img src={arrow_back} alt="arrow-back" />
-							</div>
+						</div>
+						<div className="back_container ">
+							<a href="#" className="view_all">
+								View all
+							</a>
+							<img src={arrow_back} alt="arrow-back" />
 						</div>
 					</MediumCard>
 					<MediumCard>
