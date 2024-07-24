@@ -1,8 +1,6 @@
 import React from 'react';
 import './Home.scss';
 import './../Typography/Typography.scss';
-import { Input } from '../Input/Input';
-import search from '../../assets/search.svg';
 import { SmallCard } from '../SmallCard/SmallCard.js';
 import { LargeCard } from '../LargeCard/LargeCard.js';
 import { MediumCard } from '../MediumCard/MediumCard.js';
@@ -23,8 +21,28 @@ import { ChartLine } from '../Graphs/ChartLine';
 import { ChartBar } from '../Graphs/ChartBar';
 import { dataLine } from '../../data/lineChartData';
 import { dataBar } from '../../data/barChartData';
+import { GetData } from '../../services/getData.js';
 
 export const Home = () => {
+	const resultsBarData = async () => {
+		try {
+			const response = await fetch('https://...url');
+			const data = await response.json();
+			return data;
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
+	const resultsLineData = () => {
+		try {
+			const data = GetData.getData('https://...url');
+			return data;
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
 	return (
 		<div className="Home">
 			<div className="card1">
